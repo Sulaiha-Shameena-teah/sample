@@ -20,14 +20,12 @@
   <!-- End Google Tag Manager (noscript) -->
 	hello
 	<script>
-	dataLayer.push({
-    'event': 'checkoutOption',
-    'ecommerce': {
-      'data': {
-        'amount': '100'
-      }
-    }
-  });
-		</script>
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+         'testmsg': 'hello',
+         'event': 'testEvent',
+         'send_to': 'UA-218059231-1'
+        });
+    </script>
 </body>
 </html>

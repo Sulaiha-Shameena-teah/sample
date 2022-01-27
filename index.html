@@ -21,9 +21,10 @@
 	hello
 	<script>
         window.dataLayer = window.dataLayer || [];
-window.dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+// window.dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 window.dataLayer.push({
   'ecommerce': {
+	'event': 'transaction',	  
     'purchase': {
       'actionField': {
         'id': 'T12345',                         // Transaction ID. Required for purchases and refunds.
